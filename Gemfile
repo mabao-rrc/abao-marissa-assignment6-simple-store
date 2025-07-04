@@ -61,5 +61,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 
-gem 'faker'
+gem "faker"
 end
