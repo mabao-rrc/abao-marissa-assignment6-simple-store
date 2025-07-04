@@ -4134,3 +4134,49 @@ FOREIGN KEY ("category_id")
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
   [1m[36mProduct Delete All (0.2ms)[0m  [1m[31mDELETE FROM "products" /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
   [1m[36mCategory Delete All (6.8ms)[0m  [1m[31mDELETE FROM "categories" /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-07-04 01:14:40 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/mabao/.rbenv/versions/3.3.8/lib/ruby/gems/3.3.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/mabao/.rbenv/versions/3.3.8/lib/ruby/gems/3.3.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 3.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2025-07-04 01:14:47 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='index',application='AbaoMarissaAssignment6SimpleStore',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:2
+  Rendered products/index.html.erb within layouts/application (Duration: 13.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | GC: 0.0ms)
+Completed 200 OK in 105ms (Views: 23.1ms | ActiveRecord: 1.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-07-04 01:14:47 -0500
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-04 01:14:47 -0500
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-04 01:14:47 -0500
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-04 01:14:47 -0500
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-04 01:14:47 -0500
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-04 01:14:47 -0500
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-04 01:14:47 -0500
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-04 01:14:47 -0500
+Started GET "/products" for ::1 at 2025-07-04 01:15:04 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='index',application='AbaoMarissaAssignment6SimpleStore',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:2
+  Rendered products/index.html.erb within layouts/application (Duration: 2.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | GC: 0.0ms)
+Completed 200 OK in 12ms (Views: 4.0ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-07-04 01:15:10 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/assets/application-8b441ae0.css" for ::1 at 2025-07-04 01:15:10 -0500
+Started GET "/assets/stimulus.min-2395e199.js.map" for ::1 at 2025-07-04 01:15:10 -0500
+Started GET "/assets/turbo.min-5f3b7fda.js.map" for ::1 at 2025-07-04 01:15:10 -0500
+  [1m[36mProduct Count (3.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
