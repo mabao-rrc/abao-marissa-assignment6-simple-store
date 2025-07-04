@@ -1,13 +1,28 @@
-require 'faker'
+require 'csv'
 
-puts "🌱 Seeding products..."
+puts "🌱 Seeding data..."
 
-676.times do
+# Clear tables
+Product.delete_all
+Category.delete_all
+
+# Read CSV file
+csv_file = Rails.root.join('db/products.csv')
+csv_data = File.read(csv_file)
+products = CSV.parse(csv_data, headers: true)
+
+products.each do |row|
+  next if row['title'].blank? || row['price'].blank? || row['stock_quantity'].blank?
+
+  category = Category.find_or_create_by!(name: row['category'])
+
   Product.create!(
-    title: Faker::Commerce.product_name,
-    price: Faker::Commerce.price(range: 1.0..100.0),
-    stock_quantity: Faker::Number.between(from: 1, to: 100)
+    title: row['title'],
+    description: row['description'],
+    price: row['price'],
+    stock_quantity: row['stock_quantity'],
+    category: category
   )
 end
 
-puts "✅ Done seeding!"
+puts "✅ Seeding complete!"

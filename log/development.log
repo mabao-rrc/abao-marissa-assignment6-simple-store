@@ -4122,3 +4122,15 @@ FOREIGN KEY ("category_id")
   [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250704054907') RETURNING "version" /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
   [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
+  [1m[36mProduct Delete All (0.1ms)[0m  [1m[31mDELETE FROM "products" /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
+  [1m[36mCategory Delete All (0.2ms)[0m  [1m[31mDELETE FROM "categories" /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" IS NULL LIMIT 1 /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
+  [1m[36mCategory Create (2.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (NULL, '2025-07-04 05:59:36.666831', '2025-07-04 05:59:36.666831') RETURNING "id" /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
+  [1m[36mTRANSACTION (10.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
+  [1m[36mProduct Delete All (0.2ms)[0m  [1m[31mDELETE FROM "products" /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
+  [1m[36mCategory Delete All (6.8ms)[0m  [1m[31mDELETE FROM "categories" /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
