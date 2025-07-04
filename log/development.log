@@ -4180,3 +4180,11 @@ Started GET "/assets/application-8b441ae0.css" for ::1 at 2025-07-04 01:15:10 -0
 Started GET "/assets/stimulus.min-2395e199.js.map" for ::1 at 2025-07-04 01:15:10 -0500
 Started GET "/assets/turbo.min-5f3b7fda.js.map" for ::1 at 2025-07-04 01:15:10 -0500
   [1m[36mProduct Count (3.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-07-04 10:01:56 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='AbaoMarissaAssignment6SimpleStore'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/mabao/.rbenv/versions/3.3.8/lib/ruby/gems/3.3.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/mabao/.rbenv/versions/3.3.8/lib/ruby/gems/3.3.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 18ms (Views: 3.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
