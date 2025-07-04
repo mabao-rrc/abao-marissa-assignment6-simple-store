@@ -1,3 +1,4 @@
+require 'csv'
 name,price,description,stock quantity,category
 Gorgeous Wooden Lamp,38.38,Molestiae commodi autem ducimus ut possimus.,4317,Shoes
 Heavy Duty Leather Hat,37.03,Vel non sit sunt ratione libero incidunt quam ut molestiae.,508,Shoes
